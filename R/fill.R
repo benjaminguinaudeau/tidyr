@@ -89,7 +89,7 @@ fill <- function(data, ..., .direction = c("down", "up", "downup", "updown")) {
 }
 
 fillDown <- function(vec) {
-  vec_fill_missing(col, direction = "down")
+  vec_fill_missing(vec, direction = "down")
 }
 
 #' @export
