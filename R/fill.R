@@ -88,6 +88,10 @@ fill <- function(data, ..., .direction = c("down", "up", "downup", "updown")) {
   UseMethod("fill")
 }
 
+fillDown <- function(vec) {
+  vec_fill_missing(col, direction = "down")
+}
+
 #' @export
 fill.data.frame <- function(data, ..., .direction = c("down", "up", "downup", "updown")) {
   vars <- tidyselect::eval_select(expr(c(...)), data)
